@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" rel="stylesheet">
+        div {
+            height: 200px;
+            width: 200px;
+        }
+
+        .canDrag {
+            border: solid 1px blue;
+            height: 100px;
+            width:100px;
+        }
+
+        .canDrop {
+            border: solid 1px black;
+        }
+        .cannotDrop{
+            border: solid 1px red;
+        }
+    </style>
+    <script type="text/javascript">
+        function dragStart(event){
+            console.log("start");
+            event.dataTransfer.effectAllowed = 'all';
+        }
+        function dragOver(event){
+            event.preventDefault();
+        }
+        function dragEnter(event){
+            console.log("enter");
+            event.dataTransfer.dropEffect = 'copy';
+            //event.preventDefault();
+
+
+        }
+        function drop(event){
+            console.log("drop");
+        }
+    </script>
+</head>
+<body>
+<div class="canDrag"  ondrop="drop(event)" ondrop="drop(event)" draggable="true"  ondragstart="dragStart(event)" >
+
+</div>
+<div class="canDrop" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragover="dragOver(event)"  >
+
+</div>
+<div class="cannotDrop">
+    <textarea maxlength="300"></textarea>
+</div>
+</body>
+</html>

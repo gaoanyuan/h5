@@ -1,0 +1,15 @@
+{
+	"uid": "demo",
+	"accountId": "1270814562932636",
+	"roleArn": "acs:ram::1270814562932636:role/role-open5",
+	"accessKeyId": "iGFVRJtLS1GTa89z",
+	"accessKeySecret": "LsmzldSB89H5Tt9XCUgAOKKiCAJo31",
+	"bucket": "gaoay-sh-open5",
+	"ossEndpoint": "http://oss-cn-shanghai.aliyuncs.com",
+	"publicImageHost": "http://gaoay-sh-open5.img-cn-shanghai.aliyuncs.com",
+	"publicBgHost": "http://gaoay-sh-open5.img-cn-shanghai.aliyuncs.com",
+	"publicMusicHost": "",
+	"userImageHost": "http://gaoay-sh-open5.img-cn-shanghai.aliyuncs.com",
+	"userBgHost": "http://gaoay-sh-open5.img-cn-shanghai.aliyuncs.com",
+	"userMusicHost": ""
+}

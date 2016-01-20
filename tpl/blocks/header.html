@@ -1,0 +1,105 @@
+<!-- navbar collapse -->
+<div class="navbar-inverse collapse pos-rlt edit_component navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+  <ul class="nav navbar-nav">
+    <li>
+      <a ng-click="addText()">
+        <i class="fa fa-text-width"></i>
+        <span class="icon-desc">文字</span>
+      </a>
+    </li>
+    <li >
+      <a ng-click="addImage()">
+        <i class="fa fa-file-image-o"></i>
+        <span class="icon-desc">图片</span>
+      </a>
+    </li>
+    <li >
+      <a ng-click="addMusic()">
+        <i class="fa fa-music"></i>
+        <span class="icon-desc">音乐</span>
+      </a>
+    </li>
+    <li>
+      <a data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-list-ul"></i>
+        <span class="icon-desc">表单</span>
+        <span style="color:white" class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+          <a><i class="fa fa-tasks"></i> 快捷表单</i></a>
+          <ul class="dropdown-menu">
+            <li><a ng-click="addForm()"><i class="fa fa-user"> 联系人</i></a></li>
+          </ul>
+        </li>
+        <li class="dropdown-submenu">
+          <a><i class="fa fa-bar-chart"> 选项</i></a>
+          <ul class="dropdown-menu">
+            <li><a><i class="fa fa-pencil"> 输入框</i></a></li>
+            <li><a><i class="fa fa-dot-circle-o"> 单选</i></a></li>
+            <li><a><i class="fa fa-check-square-o"> 多选</i></a></li>
+            <li><a><i class="fa fa-star"> 评分</i></a></li>
+          </ul>
+        </li>
+        <li>
+          <a><i class="fa fa-upload"> 提交按钮</i></a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- <li>
+      <a>
+        <i class="icon-list"></i>
+      </a>
+    </li>
+    <li>
+      <a>
+        <i class="icon-loop"></i>
+      </a>
+    </li>
+    <li>
+      <a>
+        <i class="icon-map"></i>
+      </a>
+    </li>
+    <li >
+      <a >
+        <i class="fa fa-video-camera"></i>
+      </a>
+    </li>
+    <li  >
+      <a >
+        <i class="fa fa-sliders"></i>
+      </a>
+    </li> -->
+  </ul>
+
+  <!-- nabar right -->
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <a ng-click="save();">
+        <i class="fa fa-save"></i>
+        <span class="icon-desc">保存</span>
+      </a>
+    </li>
+    <li>
+      <a ng-click="preview();">
+        <i class="fa fa-eye"></i>
+        <span class="icon-desc">预览</span>
+      </a>
+    </li>
+    <li>
+      <a ng-click="publish();">
+        <i class="fa fa-send"></i>
+        <span class="icon-desc">发布</span>
+      </a>
+    </li>
+    <!-- <li>
+      <a >
+        <i class="icon-logout"></i>
+      </a>
+    </li> -->
+  </ul>
+  <!-- / navbar right -->
+</div>
+<!-- / navbar collapse -->
