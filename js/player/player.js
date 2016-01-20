@@ -220,6 +220,8 @@
           }else{
 
             Player.initTurn(player);
+            player.buildTurn(theData.properties.turnType);
+
             $(".arrow_bottom").remove();
 
             for(var index in theData.pages){
